@@ -1,0 +1,11 @@
+.my-bookings-container {
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 0 20px;
+}
+
+.my-bookings-container h2 {
+  color: #004aad;
+  margin-bottom: 20px;
+  text-align: center;
+}
