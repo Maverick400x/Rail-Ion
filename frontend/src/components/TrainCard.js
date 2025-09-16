@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import { FaTrain, FaClock, FaTicketAlt, FaInfoCircle, FaBolt } from "react-icons/fa";
+import { FaTrain, FaClock, FaTicketAlt, FaBolt } from "react-icons/fa"; // Removed FaInfoCircle
 import "../styles/TrainCard.css";
 
 const TrainCard = ({ train }) => {
@@ -21,7 +21,7 @@ const TrainCard = ({ train }) => {
     const isAvailable = seats > 0;
 
     return (
-      <div className="class-item">
+      <div className="class-item" key={classType}>
         <span className="class-name">{classType}</span>
         <span className="fare">₹{fare}</span>
         <span className={`status-tag ${isAvailable ? "available" : "waitlist"}`}>
